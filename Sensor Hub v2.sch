@@ -1,0 +1,826 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0105
+U 1 1 607E689C
+P 1800 4550
+F 0 "#PWR0105" H 1800 4300 50  0001 C CNN
+F 1 "GND" H 1805 4377 50  0000 C CNN
+F 2 "" H 1800 4550 50  0001 C CNN
+F 3 "" H 1800 4550 50  0001 C CNN
+	1    1800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4xxx:4052 Mux1
+U 1 1 607E8628
+P 2700 3350
+F 0 "Mux1" H 2700 4431 50  0001 C CNN
+F 1 "4052" H 2900 4150 50  0000 C CNN
+F 2 "" H 2700 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 2700 3350 50  0001 C CNN
+	1    2700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A SensorSelector4
+U 1 1 607EC55B
+P 4950 4600
+F 0 "SensorSelector4" H 5140 4646 50  0001 L CNN
+F 1 "PN2222A" H 4800 4850 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5150 4525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4950 4600 50  0001 L CNN
+	1    4950 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:PN2222A SensorSelector3
+U 1 1 607ECBAB
+P 4450 4600
+F 0 "SensorSelector3" H 4640 4646 50  0001 L CNN
+F 1 "PN2222A" H 4300 4850 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 4525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4450 4600 50  0001 L CNN
+	1    4450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 2150 3500 2150
+$Comp
+L Connector:Screw_Terminal_01x04 Sensor_Power_Terminals1
+U 1 1 607F3B68
+P 4950 6100
+F 0 "Sensor_Power_Terminals1" V 4822 6280 50  0001 L CNN
+F 1 "Sensor Power " V 5050 5850 50  0000 L CNN
+F 2 "" H 4950 6100 50  0001 C CNN
+F 3 "~" H 4950 6100 50  0001 C CNN
+	1    4950 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 4250 2300 4250
+Wire Wire Line
+	2200 2750 2200 2150
+Wire Wire Line
+	5050 4400 5050 2850
+$Comp
+L Connector:Screw_Terminal_01x04 SensorInputTerminal1
+U 1 1 60801835
+P 6650 5750
+F 0 "SensorInputTerminal1" V 6522 5930 50  0001 L CNN
+F 1 "Sensors Signal Input" V 6568 5930 50  0000 L CNN
+F 2 "" H 6650 5750 50  0001 C CNN
+F 3 "~" H 6650 5750 50  0001 C CNN
+	1    6650 5750
+	0    1    1    0   
+$EndComp
+Connection ~ 5050 2850
+Connection ~ 2300 4250
+Wire Wire Line
+	2300 4250 1800 4250
+Wire Wire Line
+	6750 5550 7150 5550
+Wire Wire Line
+	6650 5550 6650 5450
+Wire Wire Line
+	6650 5450 7350 5450
+Wire Wire Line
+	6550 5550 6550 5350
+Wire Wire Line
+	6550 5350 7550 5350
+Wire Wire Line
+	6450 5550 6450 5250
+Wire Wire Line
+	6450 5250 7750 5250
+$Comp
+L Connector:Screw_Terminal_01x01 SensorOutputArduino1
+U 1 1 608307B3
+P 7800 2000
+F 0 "SensorOutputArduino1" V 7764 1912 50  0001 R CNN
+F 1 "Sensor Signal Output" V 7718 1912 50  0000 R CNN
+F 2 "" H 7800 2000 50  0001 C CNN
+F 3 "~" H 7800 2000 50  0001 C CNN
+	1    7800 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 2800 7800 2200
+Wire Notes Line
+	6200 2750 9300 2750
+Wire Notes Line
+	9300 2750 9300 4750
+Wire Notes Line
+	6200 4750 9300 4750
+Wire Notes Line
+	6200 4750 6200 2750
+Wire Wire Line
+	4750 4600 4750 3250
+Wire Wire Line
+	4750 3250 3500 3250
+Wire Wire Line
+	3500 3250 3500 2150
+Wire Wire Line
+	4550 4400 4550 2850
+Connection ~ 4550 2850
+Wire Wire Line
+	4550 2850 4750 2850
+Wire Wire Line
+	5050 4800 5050 5000
+Wire Wire Line
+	4550 4800 4950 4800
+Wire Wire Line
+	4250 4600 4250 3200
+Wire Wire Line
+	4250 3200 3550 3200
+Wire Wire Line
+	3550 3200 3550 2100
+Wire Wire Line
+	3550 2100 2150 2100
+Wire Wire Line
+	2150 2100 2150 2850
+Wire Wire Line
+	2150 2850 2200 2850
+$Comp
+L Transistor_BJT:PN2222A SensorSelector2
+U 1 1 60875641
+P 4000 4600
+F 0 "SensorSelector2" H 4190 4646 50  0001 L CNN
+F 1 "PN2222A" H 3850 4850 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4200 4525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4000 4600 50  0001 L CNN
+	1    4000 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2850 4100 4400
+Wire Wire Line
+	4850 4850 4100 4850
+Wire Wire Line
+	3800 3150 3600 3150
+Wire Wire Line
+	3600 3150 3600 2050
+Wire Wire Line
+	3600 2050 2100 2050
+Wire Wire Line
+	2100 2050 2100 2950
+Wire Wire Line
+	2100 2950 2200 2950
+$Comp
+L Transistor_BJT:PN2222A SensorSelector1
+U 1 1 6087C98B
+P 3550 4600
+F 0 "SensorSelector1" H 3740 4646 50  0001 L CNN
+F 1 "PN2222A" H 3400 4850 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3750 4525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 3550 4600 50  0001 L CNN
+	1    3550 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4900 3650 4900
+Wire Wire Line
+	3650 2000 2050 2000
+Wire Wire Line
+	2050 2000 2050 3050
+Wire Wire Line
+	2050 3050 2200 3050
+Connection ~ 4100 2850
+NoConn ~ 2800 4250
+NoConn ~ 2200 3450
+NoConn ~ 2200 3350
+NoConn ~ 2200 3250
+NoConn ~ 2200 3150
+Wire Wire Line
+	3650 2000 3650 3350
+Wire Wire Line
+	3650 3350 3350 3350
+Wire Wire Line
+	3350 3350 3350 4600
+$Comp
+L Device:LED SelectorLED1
+U 1 1 60897C47
+P 2650 5000
+F 0 "SelectorLED1" H 2643 5217 50  0001 C CNN
+F 1 "LED" H 2800 5050 50  0000 C CNN
+F 2 "" H 2650 5000 50  0001 C CNN
+F 3 "~" H 2650 5000 50  0001 C CNN
+	1    2650 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED SelectorLED2
+U 1 1 6089EB45
+P 2650 5150
+F 0 "SelectorLED2" H 2643 5367 50  0001 C CNN
+F 1 "LED" H 2800 5200 50  0000 C CNN
+F 2 "" H 2650 5150 50  0001 C CNN
+F 3 "~" H 2650 5150 50  0001 C CNN
+	1    2650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED SelectorLED3
+U 1 1 608A15F3
+P 2650 5300
+F 0 "SelectorLED3" H 2643 5517 50  0001 C CNN
+F 1 "LED" H 2800 5350 50  0000 C CNN
+F 2 "" H 2650 5300 50  0001 C CNN
+F 3 "~" H 2650 5300 50  0001 C CNN
+	1    2650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED SelectorLED4
+U 1 1 608A3D3C
+P 2650 5450
+F 0 "SelectorLED4" H 2643 5667 50  0001 C CNN
+F 1 "LED" H 2800 5500 50  0000 C CNN
+F 2 "" H 2650 5450 50  0001 C CNN
+F 3 "~" H 2650 5450 50  0001 C CNN
+	1    2650 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 5000 2950 5000
+$Comp
+L Device:R LEDResistor1
+U 1 1 608DF3C5
+P 3100 5000
+F 0 "LEDResistor1" V 2893 5000 50  0001 C CNN
+F 1 "220" V 3050 5200 50  0000 C CNN
+F 2 "" V 3030 5000 50  0001 C CNN
+F 3 "~" H 3100 5000 50  0001 C CNN
+	1    3100 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 5000 5050 5000
+$Comp
+L Device:R LEDResistor2
+U 1 1 608E8946
+P 3100 5150
+F 0 "LEDResistor2" V 2893 5150 50  0001 C CNN
+F 1 "200" V 3050 5350 50  0000 C CNN
+F 2 "" V 3030 5150 50  0001 C CNN
+F 3 "~" H 3100 5150 50  0001 C CNN
+	1    3100 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R LEDResistor3
+U 1 1 608EB626
+P 3100 5300
+F 0 "LEDResistor3" V 2893 5300 50  0001 C CNN
+F 1 "220" V 3050 5500 50  0000 C CNN
+F 2 "" V 3030 5300 50  0001 C CNN
+F 3 "~" H 3100 5300 50  0001 C CNN
+	1    3100 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R LEDResistor4
+U 1 1 608EE23B
+P 3100 5450
+F 0 "LEDResistor4" V 2893 5450 50  0001 C CNN
+F 1 "220" V 3050 5650 50  0000 C CNN
+F 2 "" V 3030 5450 50  0001 C CNN
+F 3 "~" H 3100 5450 50  0001 C CNN
+	1    3100 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 4900 4750 5450
+Wire Wire Line
+	4850 4850 4850 5300
+Wire Wire Line
+	3250 5150 4950 5150
+Wire Wire Line
+	3250 5300 4850 5300
+Wire Wire Line
+	3250 5450 4750 5450
+Wire Wire Line
+	2950 5450 2800 5450
+Wire Wire Line
+	2950 5300 2800 5300
+Wire Wire Line
+	2950 5150 2800 5150
+Wire Wire Line
+	2500 5000 2300 5000
+Wire Wire Line
+	2500 5150 2300 5150
+Wire Wire Line
+	2300 5150 2300 5000
+Connection ~ 2300 5000
+Wire Wire Line
+	2500 5300 2300 5300
+Wire Wire Line
+	2300 5300 2300 5150
+Connection ~ 2300 5150
+Wire Wire Line
+	2500 5450 2300 5450
+Wire Wire Line
+	2300 5450 2300 5300
+Connection ~ 2300 5300
+Wire Wire Line
+	3650 3500 4000 3500
+Wire Wire Line
+	4000 3500 4000 2850
+Wire Wire Line
+	4000 2850 4100 2850
+Wire Wire Line
+	3800 4600 3800 3150
+Wire Wire Line
+	4100 4850 4100 4800
+Wire Wire Line
+	3650 4400 3650 3500
+Wire Wire Line
+	3650 4800 3650 4900
+$Comp
+L Connector:Screw_Terminal_01x03 ControlInputArduino1
+U 1 1 6098EC0B
+P 5800 1250
+F 0 "ControlInputArduino1" V 5764 1062 50  0001 R CNN
+F 1 "Control From Arduino" V 5718 1062 50  0000 R CNN
+F 2 "" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 3650 1600 3650
+Wire Wire Line
+	1600 3650 1600 1600
+Wire Wire Line
+	3200 3150 3300 3150
+$Comp
+L Transistor_BJT:PN2222A ChipEnableSelector1
+U 1 1 609B4814
+P 4950 1250
+F 0 "ChipEnableSelector1" V 5278 1250 50  0001 C CNN
+F 1 "PN2222A" V 5187 1250 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5150 1175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4950 1250 50  0001 L CNN
+	1    4950 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 2850 5250 2450
+Wire Wire Line
+	5250 1950 4100 1950
+Wire Wire Line
+	4100 1950 4100 1800
+Wire Wire Line
+	4100 1150 4200 1150
+Wire Wire Line
+	5250 2850 5050 2850
+Wire Wire Line
+	1600 1600 4200 1600
+Wire Wire Line
+	5150 1450 5150 1550
+$Comp
+L power:GND #MainGround0103
+U 1 1 609DED6F
+P 5350 1150
+F 0 "#MainGround0103" H 5350 900 50  0001 C CNN
+F 1 "GND" H 5438 1113 50  0000 L CNN
+F 2 "" H 5350 1150 50  0001 C CNN
+F 3 "" H 5350 1150 50  0001 C CNN
+	1    5350 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1600 4200 1150
+Connection ~ 4200 1150
+Wire Wire Line
+	4950 1450 5150 1450
+Wire Wire Line
+	5350 1000 5150 1000
+Wire Wire Line
+	5150 1000 5150 1150
+$Comp
+L Device:R PullupResistor2
+U 1 1 60A730F5
+P 5400 1550
+F 0 "PullupResistor2" V 5193 1550 50  0001 C CNN
+F 1 "2K" V 5285 1550 50  0000 C CNN
+F 2 "" V 5330 1550 50  0001 C CNN
+F 3 "~" H 5400 1550 50  0001 C CNN
+	1    5400 1550
+	0    1    1    0   
+$EndComp
+Text Notes 7450 7500 0    50   ~ 0
+Custom Sensor Hub
+Text Notes 7450 7250 0    50   ~ 0
+1/1
+Wire Wire Line
+	1550 1650 1550 3850
+Wire Wire Line
+	1550 3850 2200 3850
+Wire Wire Line
+	1550 1650 5650 1650
+Wire Wire Line
+	1500 1700 1500 3950
+Wire Wire Line
+	1500 3950 2200 3950
+Wire Wire Line
+	1500 1700 5800 1700
+Wire Wire Line
+	3200 2750 4750 2750
+Wire Wire Line
+	4750 2750 4750 2850
+Connection ~ 4750 2850
+Wire Wire Line
+	4750 2850 5050 2850
+NoConn ~ 3300 3150
+Wire Wire Line
+	5350 1000 5350 1150
+$Comp
+L power:VCC #PWR0101
+U 1 1 60BA86F5
+P 3050 2350
+F 0 "#PWR0101" H 3050 2200 50  0001 C CNN
+F 1 "VCC" H 3065 2523 50  0000 C CNN
+F 2 "" H 3050 2350 50  0001 C CNN
+F 3 "" H 3050 2350 50  0001 C CNN
+	1    3050 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 60BCD691
+P 6550 2650
+F 0 "#PWR0102" H 6550 2500 50  0001 C CNN
+F 1 "VCC" H 6565 2823 50  0000 C CNN
+F 2 "" H 6550 2650 50  0001 C CNN
+F 3 "" H 6550 2650 50  0001 C CNN
+	1    6550 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 4250 2300 5000
+$Comp
+L power:GND #PWR0103
+U 1 1 60C060E2
+P 8650 4050
+F 0 "#PWR0103" H 8650 3800 50  0001 C CNN
+F 1 "GND" H 8655 3877 50  0000 C CNN
+F 2 "" H 8650 4050 50  0001 C CNN
+F 3 "" H 8650 4050 50  0001 C CNN
+	1    8650 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2850 4250 2850
+Connection ~ 4250 2850
+Wire Wire Line
+	4250 2850 4550 2850
+$Comp
+L power:+5V #PWR0104
+U 1 1 607E61D1
+P 4250 2300
+F 0 "#PWR0104" H 4250 2150 50  0001 C CNN
+F 1 "+5V" H 4265 2473 50  0000 C CNN
+F 2 "" H 4250 2300 50  0001 C CNN
+F 3 "" H 4250 2300 50  0001 C CNN
+F 4 "V" H 4250 2300 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 4250 2300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 2300 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4250 1800 4550
+Wire Wire Line
+	2700 2350 2700 2450
+Wire Wire Line
+	4250 2300 4250 2450
+$Comp
+L power:VCC #PWR0106
+U 1 1 608BE41B
+P 10000 950
+F 0 "#PWR0106" H 10000 800 50  0001 C CNN
+F 1 "VCC" H 10015 1123 50  0000 C CNN
+F 2 "" H 10000 950 50  0001 C CNN
+F 3 "" H 10000 950 50  0001 C CNN
+	1    10000 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 608BF0F4
+P 10000 850
+F 0 "#FLG0101" H 10000 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 10050 1000 50  0000 C CNN
+F 2 "" H 10000 850 50  0001 C CNN
+F 3 "~" H 10000 850 50  0001 C CNN
+	1    10000 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 850  10000 950 
+$Comp
+L power:+5V #PWR0107
+U 1 1 608D2254
+P 10300 950
+F 0 "#PWR0107" H 10300 800 50  0001 C CNN
+F 1 "+5V" H 10315 1123 50  0000 C CNN
+F 2 "" H 10300 950 50  0001 C CNN
+F 3 "" H 10300 950 50  0001 C CNN
+	1    10300 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 608DEBCE
+P 10300 850
+F 0 "#FLG0102" H 10300 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 10450 1000 50  0000 C CNN
+F 2 "" H 10300 850 50  0001 C CNN
+F 3 "~" H 10300 850 50  0001 C CNN
+	1    10300 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 850  10300 950 
+$Comp
+L power:GND #PWR0108
+U 1 1 608F7C34
+P 9700 950
+F 0 "#PWR0108" H 9700 700 50  0001 C CNN
+F 1 "GND" H 9705 777 50  0000 C CNN
+F 2 "" H 9700 950 50  0001 C CNN
+F 3 "" H 9700 950 50  0001 C CNN
+	1    9700 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 608F824D
+P 9700 850
+F 0 "#FLG0103" H 9700 925 50  0001 C CNN
+F 1 "PWR_FLAG" H 9650 1000 50  0000 C CNN
+F 2 "" H 9700 850 50  0001 C CNN
+F 3 "~" H 9700 850 50  0001 C CNN
+	1    9700 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 950  9700 850 
+$Comp
+L Connector:Screw_Terminal_01x04 Sensor_Ground_Terminals1
+U 1 1 609033BB
+P 3450 6450
+F 0 "Sensor_Ground_Terminals1" V 3322 6630 50  0001 L CNN
+F 1 "Sensor Ground" V 3550 5650 50  0000 L CNN
+F 2 "" H 3450 6450 50  0001 C CNN
+F 3 "~" H 3450 6450 50  0001 C CNN
+	1    3450 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 60907D1A
+P 2250 6600
+F 0 "#PWR0109" H 2250 6350 50  0001 C CNN
+F 1 "GND" H 2255 6427 50  0000 C CNN
+F 2 "" H 2250 6600 50  0001 C CNN
+F 3 "" H 2250 6600 50  0001 C CNN
+	1    2250 6600
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 5000
+Wire Wire Line
+	4950 4800 4950 5150
+Connection ~ 4950 5150
+Connection ~ 4850 5300
+Connection ~ 4750 5450
+Wire Wire Line
+	3250 6250 3250 6200
+Connection ~ 2250 6200
+Wire Wire Line
+	2250 6200 2250 6600
+Wire Wire Line
+	3350 6250 3350 6150
+Connection ~ 2250 6150
+Wire Wire Line
+	2250 6150 2250 6200
+Wire Wire Line
+	3450 6250 3450 6100
+Wire Wire Line
+	3450 6100 2250 6100
+Connection ~ 2250 6100
+Wire Wire Line
+	2250 6100 2250 6150
+Wire Wire Line
+	3550 6250 3550 6050
+Wire Wire Line
+	2250 6050 2250 6100
+Wire Wire Line
+	3550 6050 2250 6050
+Wire Wire Line
+	3050 2350 2700 2350
+$Comp
+L Device:C SupplyCap1
+U 1 1 60DA15B3
+P 4400 2450
+F 0 "SupplyCap1" V 4148 2450 50  0001 C CNN
+F 1 "1uF" V 4250 2600 50  0000 C CNN
+F 2 "" H 4438 2300 50  0001 C CNN
+F 3 "~" H 4400 2450 50  0001 C CNN
+	1    4400 2450
+	0    1    1    0   
+$EndComp
+Connection ~ 4250 2450
+Wire Wire Line
+	4250 2450 4250 2850
+$Comp
+L power:GND #PWR0110
+U 1 1 60DA2A71
+P 4550 2500
+F 0 "#PWR0110" H 4550 2250 50  0001 C CNN
+F 1 "GND" H 4555 2327 50  0000 C CNN
+F 2 "" H 4550 2500 50  0001 C CNN
+F 3 "" H 4550 2500 50  0001 C CNN
+	1    4550 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2450 4550 2500
+$Comp
+L power:VCC #PWR0111
+U 1 1 60E1B23A
+P 10350 1850
+F 0 "#PWR0111" H 10350 1700 50  0001 C CNN
+F 1 "VCC" H 10365 2023 50  0000 C CNN
+F 2 "" H 10350 1850 50  0001 C CNN
+F 3 "" H 10350 1850 50  0001 C CNN
+	1    10350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C chipDecouplingCap1
+U 1 1 60E1BC2B
+P 10350 2050
+F 0 "chipDecouplingCap1" H 10465 2096 50  0001 L CNN
+F 1 "0.1uF" H 10465 2050 50  0000 L CNN
+F 2 "" H 10388 1900 50  0001 C CNN
+F 3 "~" H 10350 2050 50  0001 C CNN
+	1    10350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1900 10350 1850
+$Comp
+L power:GND #PWR0112
+U 1 1 60E263F2
+P 10350 2350
+F 0 "#PWR0112" H 10350 2100 50  0001 C CNN
+F 1 "GND" H 10355 2177 50  0000 C CNN
+F 2 "" H 10350 2350 50  0001 C CNN
+F 3 "" H 10350 2350 50  0001 C CNN
+	1    10350 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 2200 10350 2350
+Wire Wire Line
+	6550 2650 6400 2650
+$Comp
+L 4xxx:4052 Mux2
+U 1 1 60F4B7BE
+P 7600 3500
+F 0 "Mux2" V 7646 4444 50  0001 L CNN
+F 1 "4052" V 7555 4444 50  0000 L CNN
+F 2 "" H 7600 3500 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4051bms-52bms-53bms.pdf" H 7600 3500 50  0001 C CNN
+	1    7600 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 3200 6700 3500
+Wire Wire Line
+	7800 2800 7000 2800
+Wire Wire Line
+	7000 2800 7000 3000
+Wire Wire Line
+	7000 4350 7000 4000
+Wire Wire Line
+	7100 4300 7100 4000
+Wire Wire Line
+	7200 4250 7200 4000
+Wire Wire Line
+	7300 4200 7300 4000
+Wire Wire Line
+	8500 3500 8650 3500
+Wire Wire Line
+	8650 3500 8650 4050
+NoConn ~ 8500 3400
+NoConn ~ 7400 4000
+NoConn ~ 7500 4000
+NoConn ~ 7600 4000
+NoConn ~ 7700 4000
+NoConn ~ 7400 3000
+Wire Wire Line
+	8200 4000 8200 4550
+Wire Wire Line
+	8200 4550 5800 4550
+Wire Wire Line
+	5800 4550 5800 1700
+Connection ~ 5800 1700
+Wire Wire Line
+	5800 1700 5900 1700
+Wire Wire Line
+	8100 4000 8100 4100
+Wire Wire Line
+	8100 4100 8000 4100
+Wire Wire Line
+	8000 4100 8000 4500
+Wire Wire Line
+	8000 4500 5650 4500
+Wire Wire Line
+	5650 4500 5650 1650
+Connection ~ 5650 1650
+Wire Wire Line
+	5650 1650 5800 1650
+Wire Wire Line
+	6400 2650 6400 3200
+Wire Wire Line
+	6400 3200 6700 3200
+Wire Wire Line
+	7900 4000 7900 4450
+Wire Wire Line
+	5950 4450 7900 4450
+Wire Wire Line
+	5950 1800 4100 1800
+Wire Wire Line
+	5950 1800 5950 4450
+Connection ~ 4100 1800
+Wire Wire Line
+	4100 1800 4100 1150
+$Comp
+L Device:R PullUpResistor1
+U 1 1 61098B0F
+P 5250 2300
+F 0 "PullUpResistor1" H 5320 2346 50  0001 L CNN
+F 1 "1K" H 5320 2300 50  0000 L CNN
+F 2 "" V 5180 2300 50  0001 C CNN
+F 3 "~" H 5250 2300 50  0001 C CNN
+	1    5250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2150 5250 1950
+Wire Wire Line
+	7150 4350 7150 5550
+Wire Wire Line
+	7350 4300 7350 5450
+Wire Wire Line
+	7550 4250 7550 5350
+Wire Wire Line
+	7750 4200 7750 5250
+Wire Wire Line
+	7150 4350 7000 4350
+Wire Wire Line
+	7350 4300 7100 4300
+Wire Wire Line
+	7550 4250 7200 4250
+Wire Wire Line
+	7750 4200 7300 4200
+Wire Wire Line
+	4200 1150 4750 1150
+Wire Wire Line
+	5900 1450 5900 1700
+Wire Wire Line
+	5800 1450 5800 1650
+Wire Wire Line
+	5550 1550 5700 1550
+Wire Wire Line
+	5700 1550 5700 1450
+Wire Wire Line
+	5250 1550 5150 1550
+Wire Wire Line
+	5050 5000 5050 5900
+Wire Wire Line
+	4950 5150 4950 5900
+Wire Wire Line
+	4850 5300 4850 5900
+Wire Wire Line
+	4750 5450 4750 5900
+Wire Wire Line
+	2250 6200 3250 6200
+Wire Wire Line
+	2250 6150 3350 6150
+$EndSCHEMATC
