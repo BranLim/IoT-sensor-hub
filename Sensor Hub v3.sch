@@ -38,23 +38,23 @@ $EndComp
 $Comp
 L Transistor_BJT:PN2222A SensorSelector4
 U 1 1 607EC55B
-P 4950 4600
-F 0 "SensorSelector4" H 5140 4646 50  0001 L CNN
-F 1 "PN2222A" H 4800 4850 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5150 4525 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4950 4600 50  0001 L CNN
-	1    4950 4600
+P 4950 4800
+F 0 "SensorSelector4" H 5140 4846 50  0001 L CNN
+F 1 "PN2222A" H 4800 4550 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5150 4725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4950 4800 50  0001 L CNN
+	1    4950 4800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Transistor_BJT:PN2222A SensorSelector3
 U 1 1 607ECBAB
-P 4450 4600
-F 0 "SensorSelector3" H 4640 4646 50  0001 L CNN
-F 1 "PN2222A" H 4300 4850 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 4525 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4450 4600 50  0001 L CNN
-	1    4450 4600
+P 4450 4800
+F 0 "SensorSelector3" H 4640 4846 50  0001 L CNN
+F 1 "PN2222A" H 4300 4550 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 4725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4450 4800 50  0001 L CNN
+	1    4450 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -71,11 +71,9 @@ F 3 "~" H 4950 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2700 4250 2300 4250
-Wire Wire Line
 	2200 2750 2200 2150
 Wire Wire Line
-	5050 4400 5050 2850
+	5050 4600 5050 4500
 $Comp
 L Connector:Screw_Terminal_01x04 SensorInputTerminal1
 U 1 1 60801835
@@ -87,10 +85,6 @@ F 3 "~" H 7550 5250 50  0001 C CNN
 	1    7550 5250
 	0    1    1    0   
 $EndComp
-Connection ~ 5050 2850
-Connection ~ 2300 4250
-Wire Wire Line
-	2300 4250 1800 4250
 $Comp
 L Connector:Screw_Terminal_01x01 SensorOutputArduino1
 U 1 1 608307B3
@@ -113,22 +107,9 @@ Wire Notes Line
 Wire Notes Line
 	6200 4000 6200 2000
 Wire Wire Line
-	4750 4600 4750 3250
-Wire Wire Line
-	4750 3250 3500 3250
-Wire Wire Line
 	3500 3250 3500 2150
 Wire Wire Line
-	4550 4400 4550 2850
-Connection ~ 4550 2850
-Wire Wire Line
-	4550 2850 4750 2850
-Wire Wire Line
-	5050 4800 5050 5000
-Wire Wire Line
-	4550 4800 4950 4800
-Wire Wire Line
-	4250 4600 4250 3200
+	4400 4600 4400 4550
 Wire Wire Line
 	4250 3200 3550 3200
 Wire Wire Line
@@ -142,20 +123,14 @@ Wire Wire Line
 $Comp
 L Transistor_BJT:PN2222A SensorSelector2
 U 1 1 60875641
-P 4000 4600
-F 0 "SensorSelector2" H 4190 4646 50  0001 L CNN
-F 1 "PN2222A" H 3850 4850 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4200 4525 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 4000 4600 50  0001 L CNN
-	1    4000 4600
+P 3950 4800
+F 0 "SensorSelector2" H 4140 4846 50  0001 L CNN
+F 1 "PN2222A" H 3800 4600 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4150 4725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 3950 4800 50  0001 L CNN
+	1    3950 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 2850 4100 4400
-Wire Wire Line
-	4850 4850 4100 4850
-Wire Wire Line
-	3800 3150 3600 3150
 Wire Wire Line
 	3600 3150 3600 2050
 Wire Wire Line
@@ -167,173 +142,125 @@ Wire Wire Line
 $Comp
 L Transistor_BJT:PN2222A SensorSelector1
 U 1 1 6087C98B
-P 3550 4600
-F 0 "SensorSelector1" H 3740 4646 50  0001 L CNN
-F 1 "PN2222A" H 3400 4850 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3750 4525 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 3550 4600 50  0001 L CNN
-	1    3550 4600
+P 3450 4800
+F 0 "SensorSelector1" H 3640 4846 50  0001 L CNN
+F 1 "PN2222A" H 3200 4650 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3650 4725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/PN2222-D.PDF" H 3450 4800 50  0001 L CNN
+	1    3450 4800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4750 4900 3650 4900
 Wire Wire Line
 	3650 2000 2050 2000
 Wire Wire Line
 	2050 2000 2050 3050
 Wire Wire Line
 	2050 3050 2200 3050
-Connection ~ 4100 2850
 NoConn ~ 2800 4250
 NoConn ~ 2200 3450
 NoConn ~ 2200 3350
 NoConn ~ 2200 3250
 NoConn ~ 2200 3150
-Wire Wire Line
-	3650 2000 3650 3350
-Wire Wire Line
-	3650 3350 3350 3350
-Wire Wire Line
-	3350 3350 3350 4600
 $Comp
 L Device:LED SelectorLED1
 U 1 1 60897C47
-P 2650 5000
-F 0 "SelectorLED1" H 2643 5217 50  0001 C CNN
-F 1 "LED" H 2800 5050 50  0000 C CNN
-F 2 "" H 2650 5000 50  0001 C CNN
-F 3 "~" H 2650 5000 50  0001 C CNN
-	1    2650 5000
-	1    0    0    -1  
+P 3450 4250
+F 0 "SelectorLED1" H 3443 4467 50  0001 C CNN
+F 1 "LED" H 3600 4300 50  0000 C CNN
+F 2 "" H 3450 4250 50  0001 C CNN
+F 3 "~" H 3450 4250 50  0001 C CNN
+	1    3450 4250
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED SelectorLED2
 U 1 1 6089EB45
-P 2650 5150
-F 0 "SelectorLED2" H 2643 5367 50  0001 C CNN
-F 1 "LED" H 2800 5200 50  0000 C CNN
-F 2 "" H 2650 5150 50  0001 C CNN
-F 3 "~" H 2650 5150 50  0001 C CNN
-	1    2650 5150
-	1    0    0    -1  
+P 4050 4250
+F 0 "SelectorLED2" H 4043 4467 50  0001 C CNN
+F 1 "LED" H 4200 4300 50  0000 C CNN
+F 2 "" H 4050 4250 50  0001 C CNN
+F 3 "~" H 4050 4250 50  0001 C CNN
+	1    4050 4250
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED SelectorLED3
 U 1 1 608A15F3
-P 2650 5300
-F 0 "SelectorLED3" H 2643 5517 50  0001 C CNN
-F 1 "LED" H 2800 5350 50  0000 C CNN
-F 2 "" H 2650 5300 50  0001 C CNN
-F 3 "~" H 2650 5300 50  0001 C CNN
-	1    2650 5300
-	1    0    0    -1  
+P 4400 4250
+F 0 "SelectorLED3" H 4393 4467 50  0001 C CNN
+F 1 "LED" H 4550 4300 50  0000 C CNN
+F 2 "" H 4400 4250 50  0001 C CNN
+F 3 "~" H 4400 4250 50  0001 C CNN
+	1    4400 4250
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:LED SelectorLED4
 U 1 1 608A3D3C
-P 2650 5450
-F 0 "SelectorLED4" H 2643 5667 50  0001 C CNN
-F 1 "LED" H 2800 5500 50  0000 C CNN
-F 2 "" H 2650 5450 50  0001 C CNN
-F 3 "~" H 2650 5450 50  0001 C CNN
-	1    2650 5450
-	1    0    0    -1  
+P 5050 4250
+F 0 "SelectorLED4" H 5043 4467 50  0001 C CNN
+F 1 "LED" H 5200 4300 50  0000 C CNN
+F 2 "" H 5050 4250 50  0001 C CNN
+F 3 "~" H 5050 4250 50  0001 C CNN
+	1    5050 4250
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2800 5000 2950 5000
+	3450 4100 3450 3950
 $Comp
 L Device:R LEDResistor1
 U 1 1 608DF3C5
-P 3100 5000
-F 0 "LEDResistor1" V 2893 5000 50  0001 C CNN
-F 1 "220" V 3050 5200 50  0000 C CNN
-F 2 "" V 3030 5000 50  0001 C CNN
-F 3 "~" H 3100 5000 50  0001 C CNN
-	1    3100 5000
-	0    1    1    0   
+P 3450 3800
+F 0 "LEDResistor1" V 3243 3800 50  0001 C CNN
+F 1 "220" V 3400 4000 50  0000 C CNN
+F 2 "" V 3380 3800 50  0001 C CNN
+F 3 "~" H 3450 3800 50  0001 C CNN
+	1    3450 3800
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 5000 5050 5000
 $Comp
 L Device:R LEDResistor2
 U 1 1 608E8946
-P 3100 5150
-F 0 "LEDResistor2" V 2893 5150 50  0001 C CNN
-F 1 "200" V 3050 5350 50  0000 C CNN
-F 2 "" V 3030 5150 50  0001 C CNN
-F 3 "~" H 3100 5150 50  0001 C CNN
-	1    3100 5150
-	0    1    1    0   
+P 4050 3800
+F 0 "LEDResistor2" V 3843 3800 50  0001 C CNN
+F 1 "200" V 4000 4000 50  0000 C CNN
+F 2 "" V 3980 3800 50  0001 C CNN
+F 3 "~" H 4050 3800 50  0001 C CNN
+	1    4050 3800
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R LEDResistor3
 U 1 1 608EB626
-P 3100 5300
-F 0 "LEDResistor3" V 2893 5300 50  0001 C CNN
-F 1 "220" V 3050 5500 50  0000 C CNN
-F 2 "" V 3030 5300 50  0001 C CNN
-F 3 "~" H 3100 5300 50  0001 C CNN
-	1    3100 5300
-	0    1    1    0   
+P 4400 3800
+F 0 "LEDResistor3" V 4193 3800 50  0001 C CNN
+F 1 "220" V 4350 4000 50  0000 C CNN
+F 2 "" V 4330 3800 50  0001 C CNN
+F 3 "~" H 4400 3800 50  0001 C CNN
+	1    4400 3800
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R LEDResistor4
 U 1 1 608EE23B
-P 3100 5450
-F 0 "LEDResistor4" V 2893 5450 50  0001 C CNN
-F 1 "220" V 3050 5650 50  0000 C CNN
-F 2 "" V 3030 5450 50  0001 C CNN
-F 3 "~" H 3100 5450 50  0001 C CNN
-	1    3100 5450
-	0    1    1    0   
+P 5050 3800
+F 0 "LEDResistor4" V 4843 3800 50  0001 C CNN
+F 1 "220" V 5000 4000 50  0000 C CNN
+F 2 "" V 4980 3800 50  0001 C CNN
+F 3 "~" H 5050 3800 50  0001 C CNN
+	1    5050 3800
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 4900 4750 5450
+	5050 3950 5050 4100
 Wire Wire Line
-	4850 4850 4850 5300
+	4400 3950 4400 4100
 Wire Wire Line
-	3250 5150 4950 5150
+	4050 3950 4050 4100
 Wire Wire Line
-	3250 5300 4850 5300
+	3450 4400 3450 4500
 Wire Wire Line
-	3250 5450 4750 5450
-Wire Wire Line
-	2950 5450 2800 5450
-Wire Wire Line
-	2950 5300 2800 5300
-Wire Wire Line
-	2950 5150 2800 5150
-Wire Wire Line
-	2500 5000 2300 5000
-Wire Wire Line
-	2500 5150 2300 5150
-Wire Wire Line
-	2300 5150 2300 5000
-Connection ~ 2300 5000
-Wire Wire Line
-	2500 5300 2300 5300
-Wire Wire Line
-	2300 5300 2300 5150
-Connection ~ 2300 5150
-Wire Wire Line
-	2500 5450 2300 5450
-Wire Wire Line
-	2300 5450 2300 5300
-Connection ~ 2300 5300
-Wire Wire Line
-	3650 3500 4000 3500
-Wire Wire Line
-	4000 3500 4000 2850
-Wire Wire Line
-	4000 2850 4100 2850
-Wire Wire Line
-	3800 4600 3800 3150
-Wire Wire Line
-	4100 4850 4100 4800
-Wire Wire Line
-	3650 4400 3650 3500
-Wire Wire Line
-	3650 4800 3650 4900
+	4050 4400 4050 4500
 $Comp
 L Connector:Screw_Terminal_01x03 ControlInputArduino1
 U 1 1 6098EC0B
@@ -370,8 +297,6 @@ Wire Wire Line
 	4100 1950 4100 1800
 Wire Wire Line
 	4100 1150 4200 1150
-Wire Wire Line
-	5250 2850 5050 2850
 Wire Wire Line
 	1600 1600 4200 1600
 Wire Wire Line
@@ -426,8 +351,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 2750 4750 2850
 Connection ~ 4750 2850
-Wire Wire Line
-	4750 2850 5050 2850
 NoConn ~ 3300 3150
 Wire Wire Line
 	5350 1000 5350 1150
@@ -453,8 +376,6 @@ F 3 "" H 6550 1900 50  0001 C CNN
 	1    6550 1900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2300 4250 2300 5000
 $Comp
 L power:GND #PWR0103
 U 1 1 60C060E2
@@ -466,11 +387,7 @@ F 3 "" H 8650 3300 50  0001 C CNN
 	1    8650 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 2850 4250 2850
 Connection ~ 4250 2850
-Wire Wire Line
-	4250 2850 4550 2850
 $Comp
 L power:+5V #PWR0104
 U 1 1 607E61D1
@@ -563,46 +480,8 @@ F 3 "~" H 9700 850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9700 950  9700 850 
-$Comp
-L power:GND #PWR0109
-U 1 1 60907D1A
-P 2300 6200
-F 0 "#PWR0109" H 2300 5950 50  0001 C CNN
-F 1 "GND" H 2305 6027 50  0000 C CNN
-F 2 "" H 2300 6200 50  0001 C CNN
-F 3 "" H 2300 6200 50  0001 C CNN
-	1    2300 6200
-	1    0    0    -1  
-$EndComp
-Connection ~ 5050 5000
-Wire Wire Line
-	4950 4800 4950 5150
-Connection ~ 4950 5150
-Connection ~ 4850 5300
-Connection ~ 4750 5450
-Wire Wire Line
-	3300 5850 3300 5800
-Connection ~ 2300 5800
-Wire Wire Line
-	2300 5800 2300 6200
-Wire Wire Line
-	3400 5850 3400 5750
-Connection ~ 2300 5750
-Wire Wire Line
-	2300 5750 2300 5800
-Wire Wire Line
-	3500 5850 3500 5700
-Wire Wire Line
-	3500 5700 2300 5700
-Connection ~ 2300 5700
-Wire Wire Line
-	2300 5700 2300 5750
 Wire Wire Line
 	3600 5850 3600 5650
-Wire Wire Line
-	2300 5650 2300 5700
-Wire Wire Line
-	3600 5650 2300 5650
 Wire Wire Line
 	3050 2350 2700 2350
 $Comp
@@ -756,18 +635,6 @@ Wire Wire Line
 	5700 1550 5700 1450
 Wire Wire Line
 	5250 1550 5150 1550
-Wire Wire Line
-	5050 5000 5050 5900
-Wire Wire Line
-	4950 5150 4950 5900
-Wire Wire Line
-	4850 5300 4850 5900
-Wire Wire Line
-	4750 5450 4750 5900
-Wire Wire Line
-	2300 5800 3300 5800
-Wire Wire Line
-	2300 5750 3400 5750
 $Comp
 L 74xx:74LS04 SensorSignalInputInverter1
 U 7 1 608529D1
@@ -974,4 +841,169 @@ Wire Notes Line
 	5450 6150 5450 4200
 Wire Notes Line
 	5450 6150 7050 6150
+Wire Wire Line
+	4250 2850 4550 2850
+Wire Wire Line
+	4750 2850 5050 2850
+Wire Wire Line
+	4250 3200 4250 4800
+Wire Wire Line
+	1800 4250 2250 4250
+Connection ~ 5050 3400
+Wire Wire Line
+	5050 2850 5050 3400
+Connection ~ 5050 2850
+Wire Wire Line
+	5050 2850 5250 2850
+Wire Wire Line
+	4550 2850 4550 3400
+Connection ~ 4550 2850
+Wire Wire Line
+	4550 2850 4750 2850
+Wire Wire Line
+	4950 5900 4950 5250
+Wire Wire Line
+	4950 5250 4700 5250
+Wire Wire Line
+	4700 5250 4700 3400
+Wire Wire Line
+	4700 3400 4550 3400
+Wire Wire Line
+	4400 3400 4400 3650
+Wire Wire Line
+	4100 2850 4100 3400
+Connection ~ 4100 2850
+Wire Wire Line
+	4100 2850 4250 2850
+Wire Wire Line
+	4850 5900 4850 5300
+Wire Wire Line
+	4850 5300 4200 5300
+Wire Wire Line
+	4200 5300 4200 3400
+Wire Wire Line
+	4200 3400 4100 3400
+Wire Wire Line
+	4050 3400 4050 3650
+Wire Wire Line
+	3700 2850 4100 2850
+Wire Wire Line
+	2250 5000 2250 4250
+Connection ~ 2250 4250
+Wire Wire Line
+	2250 4250 2700 4250
+Wire Wire Line
+	2250 5050 2250 5000
+Connection ~ 2250 5000
+Wire Wire Line
+	4550 5000 4550 5100
+Wire Wire Line
+	4550 5100 2250 5100
+Wire Wire Line
+	2250 5100 2250 5050
+Connection ~ 2250 5050
+Wire Wire Line
+	5050 5000 5050 5150
+Wire Wire Line
+	5050 5150 2250 5150
+Wire Wire Line
+	2250 5150 2250 5100
+Connection ~ 2250 5100
+Wire Wire Line
+	4750 5900 4750 5350
+Wire Wire Line
+	3500 3250 4750 3250
+Wire Wire Line
+	4750 3250 4750 4800
+Wire Wire Line
+	5050 5900 5050 5250
+Wire Wire Line
+	3550 5000 2250 5000
+Wire Wire Line
+	3200 4800 3250 4800
+Wire Wire Line
+	3700 5350 4750 5350
+Wire Wire Line
+	3650 2000 3650 3300
+Wire Wire Line
+	3650 3300 3200 3300
+Wire Wire Line
+	3200 3300 3200 4800
+Wire Wire Line
+	3700 5350 3700 3400
+Wire Wire Line
+	3450 3400 3450 3650
+Wire Wire Line
+	3700 2850 3700 3400
+Connection ~ 3700 3400
+Wire Wire Line
+	5350 5250 5350 3400
+Wire Wire Line
+	5050 3400 5350 3400
+Wire Wire Line
+	5050 5250 5350 5250
+Wire Wire Line
+	5050 3400 5050 3650
+Wire Wire Line
+	3600 5650 5250 5650
+Wire Wire Line
+	5250 5650 5250 4500
+Wire Wire Line
+	5250 4500 5050 4500
+Connection ~ 5050 4500
+Wire Wire Line
+	5050 4500 5050 4400
+Wire Wire Line
+	4100 3400 4050 3400
+Connection ~ 4100 3400
+Wire Wire Line
+	4050 5000 4050 5050
+Wire Wire Line
+	4050 5050 2250 5050
+Wire Wire Line
+	3750 4800 3750 3150
+Wire Wire Line
+	3750 3150 3600 3150
+Wire Wire Line
+	3400 5550 4150 5550
+Wire Wire Line
+	4150 5550 4150 4500
+Wire Wire Line
+	4150 4500 4050 4500
+Wire Wire Line
+	3400 5550 3400 5850
+Connection ~ 4050 4500
+Wire Wire Line
+	4050 4500 4050 4600
+Wire Wire Line
+	4550 3400 4400 3400
+Connection ~ 4550 3400
+Wire Wire Line
+	4400 4600 4550 4600
+Wire Wire Line
+	3500 5600 4650 5600
+Wire Wire Line
+	4650 5600 4650 4550
+Wire Wire Line
+	4650 4550 4400 4550
+Wire Wire Line
+	3500 5600 3500 5850
+Connection ~ 4400 4550
+Wire Wire Line
+	4400 4550 4400 4400
+Wire Wire Line
+	3450 3400 3700 3400
+Wire Wire Line
+	3550 4600 3450 4600
+Wire Wire Line
+	3300 5500 3650 5500
+Wire Wire Line
+	3650 5500 3650 4500
+Wire Wire Line
+	3650 4500 3450 4500
+Wire Wire Line
+	3300 5500 3300 5850
+Connection ~ 3450 4500
+Wire Wire Line
+	3450 4500 3450 4600
 $EndSCHEMATC
