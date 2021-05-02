@@ -631,99 +631,14 @@ Wire Wire Line
 	5700 1550 5700 1450
 Wire Wire Line
 	5250 1550 5150 1550
-$Comp
-L 74xx:74LS04 SensorSignalInputInverter1
-U 7 1 608529D1
-P 5700 4850
-F 0 "SensorSignalInputInverter1" H 5930 4896 50  0001 L CNN
-F 1 "74LS04" H 5800 5350 50  0000 L CNN
-F 2 "" H 5700 4850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5700 4850 50  0001 C CNN
-	7    5700 4850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7300 3450 7650 3450
 Wire Wire Line
-	7650 3450 7650 4850
-Wire Wire Line
 	7200 3500 7550 3500
-Wire Wire Line
-	7550 3500 7550 4900
 Wire Wire Line
 	7100 3550 7450 3550
 Wire Wire Line
-	7450 3550 7450 4950
-Wire Wire Line
 	7000 3600 7350 3600
-Wire Wire Line
-	7350 3600 7350 5000
-$Comp
-L power:VCC #PWR01
-U 1 1 6092517A
-P 5700 4150
-F 0 "#PWR01" H 5700 4000 50  0001 C CNN
-F 1 "VCC" H 5715 4323 50  0000 C CNN
-F 2 "" H 5700 4150 50  0001 C CNN
-F 3 "" H 5700 4150 50  0001 C CNN
-	1    5700 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 6092C085
-P 5700 5650
-F 0 "#PWR02" H 5700 5400 50  0001 C CNN
-F 1 "GND" H 5705 5477 50  0000 C CNN
-F 2 "" H 5700 5650 50  0001 C CNN
-F 3 "" H 5700 5650 50  0001 C CNN
-	1    5700 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 SensorInputInverter1
-U 1 1 60933110
-P 6650 4450
-F 0 "SensorInputInverter1" H 6650 4767 50  0001 C CNN
-F 1 "74LS04" H 6750 4300 50  0000 C CNN
-F 2 "" H 6650 4450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6650 4450 50  0001 C CNN
-	1    6650 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 SensorInputInverter1
-U 2 1 60934A49
-P 6650 4900
-F 0 "SensorInputInverter1" H 6650 5217 50  0001 C CNN
-F 1 "74LS04" H 6800 4750 50  0000 C CNN
-F 2 "" H 6650 4900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6650 4900 50  0001 C CNN
-	2    6650 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 SensorInputInverter1
-U 3 1 609359F0
-P 6650 5300
-F 0 "SensorInputInverter1" H 6650 5617 50  0001 C CNN
-F 1 "74LS04" H 6800 5150 50  0000 C CNN
-F 2 "" H 6650 5300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6650 5300 50  0001 C CNN
-	3    6650 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 SensorInputInverter1
-U 4 1 60936C71
-P 6650 5700
-F 0 "SensorInputInverter1" H 6650 6017 50  0001 C CNN
-F 1 "74LS04" H 6850 5550 50  0000 C CNN
-F 2 "" H 6650 5700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6650 5700 50  0001 C CNN
-	4    6650 5700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5950 1800 5950 3700
 Wire Wire Line
@@ -738,10 +653,6 @@ Wire Wire Line
 Connection ~ 5800 1700
 Wire Wire Line
 	5800 1700 5900 1700
-Wire Wire Line
-	5700 4150 5700 4350
-Wire Wire Line
-	5700 5350 5700 5650
 $Comp
 L Connector:Screw_Terminal_01x04 Sensor_Ground_Terminals1
 U 1 1 609033BB
@@ -753,90 +664,6 @@ F 3 "~" H 1750 6050 50  0001 C CNN
 	1    1750 6050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	900  6850 900  3050
-Wire Wire Line
-	900  3050 2050 3050
-Connection ~ 2050 3050
-Wire Wire Line
-	6150 6850 900  6850
-Wire Wire Line
-	6350 5700 6150 5700
-Wire Wire Line
-	6150 5700 6150 6850
-Wire Wire Line
-	6350 5300 6100 5300
-Wire Wire Line
-	6100 5300 6100 6800
-Wire Wire Line
-	6100 6800 950  6800
-Wire Wire Line
-	950  6800 950  2950
-Wire Wire Line
-	950  2950 2100 2950
-Connection ~ 2100 2950
-Wire Wire Line
-	6350 4900 6050 4900
-Wire Wire Line
-	6050 4900 6050 6750
-Wire Wire Line
-	6050 6750 1000 6750
-Wire Wire Line
-	1000 6750 1000 2850
-Wire Wire Line
-	1000 2850 2150 2850
-Connection ~ 2150 2850
-Wire Wire Line
-	6950 5700 7150 5700
-Wire Wire Line
-	7150 5700 7150 5000
-Wire Wire Line
-	7150 5000 7350 5000
-Connection ~ 7350 5000
-Wire Wire Line
-	7350 5000 7350 5050
-Wire Wire Line
-	6950 5300 7100 5300
-Wire Wire Line
-	7100 5300 7100 4950
-Wire Wire Line
-	7100 4950 7450 4950
-Connection ~ 7450 4950
-Wire Wire Line
-	7450 4950 7450 5050
-Wire Wire Line
-	6950 4900 7550 4900
-Connection ~ 7550 4900
-Wire Wire Line
-	7550 4900 7550 5050
-Wire Wire Line
-	6950 4450 7100 4450
-Wire Wire Line
-	7100 4450 7100 4850
-Wire Wire Line
-	7100 4850 7650 4850
-Connection ~ 7650 4850
-Wire Wire Line
-	7650 4850 7650 5050
-Wire Wire Line
-	6350 4450 6000 4450
-Wire Wire Line
-	6000 4450 6000 6700
-Wire Wire Line
-	6000 6700 1050 6700
-Wire Wire Line
-	1050 6700 1050 2750
-Wire Wire Line
-	1050 2750 2200 2750
-Connection ~ 2200 2750
-Wire Notes Line
-	5450 4200 7050 4200
-Wire Notes Line
-	7050 4200 7050 6150
-Wire Notes Line
-	5450 6150 5450 4200
-Wire Notes Line
-	5450 6150 7050 6150
 Wire Wire Line
 	4750 2850 5050 2850
 Wire Wire Line
@@ -1080,4 +907,12 @@ Wire Wire Line
 	4100 5300 4100 4450
 Wire Wire Line
 	4100 5300 4850 5300
+Wire Wire Line
+	7650 3450 7650 5050
+Wire Wire Line
+	7550 3500 7550 5050
+Wire Wire Line
+	7450 3550 7450 5050
+Wire Wire Line
+	7350 3600 7350 5050
 $EndSCHEMATC
