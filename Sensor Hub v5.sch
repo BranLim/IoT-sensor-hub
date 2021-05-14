@@ -696,10 +696,10 @@ Wire Wire Line
 Wire Wire Line
 	7350 3600 7350 5050
 $Comp
-L Transistor_BJT:2N3906 Q?
+L Transistor_BJT:2N3906 Q4
 U 1 1 609F26AA
 P 5150 5250
-F 0 "Q?" H 5341 5204 50  0001 L CNN
+F 0 "Q4" H 5341 5204 50  0001 L CNN
 F 1 "2N3906" H 4900 5400 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5350 5175 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 5150 5250 50  0001 L CNN
@@ -707,10 +707,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 5150 5250 50  0001 L 
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 60C7032B
 P 2250 6600
-F 0 "#PWR?" H 2250 6350 50  0001 C CNN
+F 0 "#PWR01" H 2250 6350 50  0001 C CNN
 F 1 "GND" H 2255 6427 50  0000 C CNN
 F 2 "" H 2250 6600 50  0001 C CNN
 F 3 "" H 2250 6600 50  0001 C CNN
@@ -718,10 +718,10 @@ F 3 "" H 2250 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 60CE7015
 P 6150 7400
-F 0 "#PWR?" H 6150 7150 50  0001 C CNN
+F 0 "#PWR02" H 6150 7150 50  0001 C CNN
 F 1 "GND" H 6155 7227 50  0000 C CNN
 F 2 "" H 6150 7400 50  0001 C CNN
 F 3 "" H 6150 7400 50  0001 C CNN
@@ -738,10 +738,10 @@ Connection ~ 6150 7350
 Wire Wire Line
 	6150 7350 6150 7400
 $Comp
-L Transistor_BJT:2N3906 Q?
+L Transistor_BJT:2N3906 Q2
 U 1 1 60D76618
 P 3800 5250
-F 0 "Q?" V 4035 5250 50  0001 C CNN
+F 0 "Q2" V 4035 5250 50  0001 C CNN
 F 1 "2N3906" H 3550 5400 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4000 5175 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 3800 5250 50  0001 L CNN
@@ -749,10 +749,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 3800 5250 50  0001 L 
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_BJT:2N3906 Q?
+L Transistor_BJT:2N3906 Q1
 U 1 1 60D7775A
 P 3200 5250
-F 0 "Q?" V 3435 5250 50  0001 C CNN
+F 0 "Q1" V 3435 5250 50  0001 C CNN
 F 1 "2N3906" H 2900 5400 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3400 5175 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 3200 5250 50  0001 L CNN
@@ -760,10 +760,10 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 3200 5250 50  0001 L 
 	1    0    0    1   
 $EndComp
 $Comp
-L Transistor_BJT:2N3906 Q?
+L Transistor_BJT:2N3906 Q3
 U 1 1 60D78727
 P 4450 5250
-F 0 "Q?" V 4685 5250 50  0001 C CNN
+F 0 "Q3" V 4685 5250 50  0001 C CNN
 F 1 "2N3906" H 4200 5400 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4650 5175 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF" H 4450 5250 50  0001 L CNN
